@@ -8,6 +8,8 @@ class HTMLNode:
         raise NotImplementedError()
     def props_to_html(self):
         propString = ""
+        if self.props == None:
+            return propString
         for key in self.props.keys():
             propString += f' {key}="{self.props[key]}"'
         return propString
