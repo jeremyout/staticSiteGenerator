@@ -16,7 +16,7 @@ from utility import (
     split_nodes_delimiter
     )
 
-class TestParentNode(unittest.TestCase):
+class TestUtility(unittest.TestCase):
     def test_utility_textToHtmlNode_text(self):
         textnode = TextNode("This is a plain text node", "text")
         self.assertEqual(text_node_to_html_node(textnode).to_html(),'This is a plain text node')
