@@ -39,7 +39,6 @@ class TestParentNode(unittest.TestCase):
     def test_utility_split_nodes_delimiter(self):
         node = TextNode("This is text with a `code block` word", text_type_text)
         new_nodes = split_nodes_delimiter([node], "`", text_type_code)
-        print(new_nodes)
     def test_utility_delim_bold(self):
         node = TextNode("This is text with a **bolded** word", text_type_text)
         new_nodes = split_nodes_delimiter([node], "**", text_type_bold)
